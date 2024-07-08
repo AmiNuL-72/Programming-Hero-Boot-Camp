@@ -1,0 +1,25 @@
+.header-container{
+    height: 100vh;
+    background-color: var(--background_color);
+    background-image: url("Images/Banner_bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav{
+    color: var(--primary_font_color);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    font-size: 36px;
+}
+
+#right_menu_icon{
+    width: 175px;
+    text-align: right;
+}
+.center_menu{
+    width: 175px;
+    text-align: center;
+}
