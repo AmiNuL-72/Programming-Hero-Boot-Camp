@@ -1,0 +1,53 @@
+.Projects_container{
+    height: 100%;
+    margin-top: 180px;
+}
+
+.section_title{
+    margin: 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.my_projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+.Project_Pic img{
+    width: 100%;
+}
+.check_button{
+    display: flex;
+    justify-content: center;
+}
+
+.check_button button{
+    padding: 15px 50px;
+    background-color: var(--background_color);
+    margin: 50px 0px 50px 0px;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+@media only screen and (min-width: 150px) and (max-width:700px){
+    .Projects_container{
+        margin-top: 120px;
+    }    
+    .my_projects{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section_title{
+        margin: 20px;
+        font-size: 30px;
+    }
+    .check_button button{
+        font-size: 30px;
+    }
+    .Blogs_container{
+        margin-top: 120px;
+    }
+}
