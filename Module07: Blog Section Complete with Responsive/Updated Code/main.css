@@ -1,0 +1,117 @@
+.Projects_container{
+    height: 100%;
+    margin-top: 180px;
+}
+.section_title{
+    margin: 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.my_projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+.Project_Pic img{
+    width: 100%;
+}
+.check_button{
+    display: flex;
+    justify-content: center;
+}
+.check_button button{
+    padding: 15px 50px;
+    background-color: var(--background_color);
+    margin: 50px 0px 50px 0px;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+/* blog section sart  */
+.my_blogs{
+    display: flex;
+    justify-content: space-between;
+}
+.section_top{
+    display: flex;
+    justify-content: space-between;
+}
+.section_arrow{
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;    
+}
+.arrow_arrow h1{
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    color: black;
+    background-color: white;
+    border-radius: 100%;
+    gap: 30px;
+    text-align: center;
+    padding-bottom: 35%;
+    padding-right: 5%;
+}
+
+.uiux_design{
+    background-color: white;
+    width: fit-content;
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 0px;
+    border-radius: 50px;
+}
+.uiux_design p{
+    color: black;
+    padding: 20px 40px;
+}
+.date_name{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.round_date{
+    height: 20px;
+    width: 20px;
+    background-color:#BA0BF9;
+    border-radius: 100%;
+}
+.round_name{
+    height: 20px;
+    width: 20px;
+    background-color:#5E4AF1;
+    border-radius: 100%;
+}
+.date{
+    display: flex;
+    gap: 10px;
+}
+.blog_title{
+    margin: 30px 0px;
+}
+@media only screen and (min-width: 150px) and (max-width:700px){
+    .Projects_container{
+        margin-top: 120px;
+    }    
+    .my_projects{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section_title{
+        margin: 20px;
+        font-size: 30px;
+    }
+    .check_button button{
+        font-size: 30px;
+    }
+    .Blogs_container{
+        margin-top: 120px;
+    }
+    .my_blogs{
+        flex-direction: column;
+    }
+}

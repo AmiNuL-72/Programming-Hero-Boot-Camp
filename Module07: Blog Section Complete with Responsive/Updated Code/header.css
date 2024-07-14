@@ -1,0 +1,141 @@
+.header-container{
+    height: 100%;
+    background-image: url("Images/Banner_bg.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.nav{
+    padding-top: 20px;    
+    display: flex;
+    justify-content: space-between;
+    color: var(--primary_font_color);
+    gap: 20px;
+    font-size: 36px;
+}
+
+#right_menu_icon{
+    width: 175px;
+    text-align: right;
+}
+.center_menu{
+    width: 175px;
+    text-align: center;
+}
+
+.banner-title h1{
+    font-size: 152px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 40px 0px;
+}
+
+.banner-desc{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 40px 0px;
+}
+
+.banner-profile-container{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--primary_font_color);
+    border-bottom: 1px solid var(--primary_font_color);
+}
+
+.banner-profile-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: 40px;
+}
+
+.banner-image-container{
+    background-color: var(--primary_font_color);
+    width: fit-content;
+}
+
+#banner-image{
+    height: 300px;
+}
+
+.work_icon_container{
+    display: flex;
+    gap: 14px;
+    padding: 50px 0px;
+}
+
+.icon01{
+    height: 60px;
+    width: 60px;
+    padding-bottom: 0px;
+}
+.experience_container{
+    display: flex;
+    justify-content: space-between;
+}
+.experience_part1 h1{
+    font-size: 152px;
+}
+.experience_part1 p{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 150px) and (max-width:700px){
+    .nav{
+        font-size: 18px;
+    }
+    .experience_container{
+        flex-direction: column;
+    }
+
+    /*------ Try to responsible by myself-------- 
+    ---------------------------------------------*/
+    .container{
+        width: fit-content;
+    }
+    /*------------nav-----------*/
+    .center_menu{
+        width: 75px;
+    }
+    #right_menu_icon{
+        width: 75px;
+    }
+    /*-------------------------*/
+    .banner-title h1{
+        font-size: 56px;
+        padding-left: 10px;
+    }
+    .banner-desc{
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    /* --------------------------- */
+    .work_icon_container{
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    .icon01{
+        height: 25px;
+        width: 25px;
+    }
+    .banner-profile-container{
+        flex-direction: column;
+    }
+
+}
+@media only screen and (max-width:1250px){
+    .banner-title h1{
+        font-size: 56px;
+    }
+    .my_blogs{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:149px){
+    .container{
+        display: none;
+    }
+}
